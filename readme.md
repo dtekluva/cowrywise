@@ -1,5 +1,3 @@
-
-===================
  Django UUID App For CowryWise
 ===================
 
