@@ -34,7 +34,7 @@ class UUID(models.Model):
     @staticmethod
     def get_all():
 
-        uuids = {str(uuid.date).split("+")[0]: uuid.uuid for uuid in UUID.objects.all()}
+        uuids = {str(uuid.date).split("+")[0]: uuid.uuid for uuid in UUID.objects.all().order_by("-date")}
         print(uuids)
 
         return {
